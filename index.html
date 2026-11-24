@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SAN'S MC | 中古バイク販売・買取</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic",sans-serif;
+    background:#111;
+    color:#fff;
+    line-height:1.8;
+}
+
+header{
+    background:#000;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:3px solid #ff6600;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+}
+
+.logo{
+    color:#ff6600;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    color:#ff6600;
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    margin:15px 0;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff6600;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    margin:10px;
+    font-weight:bold;
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section h2{
+    color:#ff6600;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1d1d1d;
+    padding:25px;
+    border-radius:10px;
+    border:1px solid #333;
+}
+
+.card h3{
+    color:#ff6600;
+}
+
+.area{
+    background:#1a1a1a;
+    text-align:center;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    background:#222;
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    border-radius:10px;
+}
+
+footer{
+    background:black;
+    border-top:3px solid #ff6600;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-content h1{
+    font-size:2.5rem;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+<div class="logo">SAN'S MC</div>
+
+<ul>
+<li><a href="#about">会社紹介</a></li>
+<li><a href="#stock">在庫一覧</a></li>
+<li><a href="#purchase">買取</a></li>
+<li><a href="#voice">お客様の声</a></li>
+<li><a href="#contact">お問い合わせ</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>SAN'S MC</h1>
+
+<p>
+福岡県全域対応<br>
+全国陸送対応
+</p>
+
+<p>
+中古バイク販売・買取
+</p>
+
+<a href="#stock" class="btn">在庫を見る</a>
+<a href="#contact" class="btn">お問い合わせ</a>
+
+</div>
+
+</section>
+
+<section class="section" id="about">
+
+<h2>SAN'S MCについて</h2>
+
+<p>
+福岡県を拠点に中古バイクの販売・買取を行っています。
+お客様一人ひとりとの信頼を大切に、
+良質な車両をご提供します。
+</p>
+
+</section>
+
+<section class="section" id="stock">
+
+<h2>最新在庫</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>HONDA CB400SB</h3>
+<p>走行距離：32,000km</p>
+<p>価格：498,000円</p>
+</div>
+
+<div class="card">
+<h3>Kawasaki Ninja250</h3>
+<p>走行距離：18,000km</p>
+<p>価格：428,000円</p>
+</div>
+
+<div class="card">
+<h3>YAMAHA SR400</h3>
+<p>走行距離：13,000km</p>
+<p>価格：598,000円</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="purchase">
+
+<h2>バイク買取</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>高価買取</h3>
+<p>人気車種は特に強化買取中</p>
+</div>
+
+<div class="card">
+<h3>不動車相談OK</h3>
+<p>車検切れ・長期保管車もご相談ください</p>
+</div>
+
+<div class="card">
+<h3>出張査定可能</h3>
+<p>福岡県全域対応</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section area">
+
+<h2>対応エリア</h2>
+
+<p>
+福岡県全域対応<br>
+全国陸送対応
+</p>
+
+</section>
+
+<section class="section" id="voice">
+
+<h2>お客様の声</h2>
+
+<div class="cards">
+
+<div class="card">
+★★★★★<br>
+探していた車両を見つけてもらえました。
+</div>
+
+<div class="card">
+★★★★★<br>
+丁寧な対応で安心して購入できました。
+</div>
+
+</div>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2>お問い合わせ</h2>
+
+<div class="contact-box">
+
+<p>電話番号：後日掲載</p>
+
+<p>LINE：後日掲載</p>
+
+<p>メールフォーム：準備中</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>SAN'S MC</h3>
+
+<p>中古バイク販売・買取</p>
+
+<p>福岡県全域対応・全国陸送対応</p>
+
+<p>© SAN'S MC</p>
+
+</footer>
+
+</body>
+</html>
