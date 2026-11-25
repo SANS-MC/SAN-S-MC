@@ -134,7 +134,30 @@ nav a{
     padding:30px;
     border-radius:10px;
 }
+input,
+textarea{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+border:none;
+border-radius:5px;
+font-size:16px;
+}
 
+button{
+background:#ff6600;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+}
+
+button:hover{
+opacity:0.9;
+}
 footer{
     background:black;
     border-top:3px solid #ff6600;
@@ -304,11 +327,46 @@ comingsoon...
 
 <div class="contact-box">
 
-<p>電話番号：後日掲載</p>
+<form action="https://formspree.io/f/xbgoqawq" method="POST">
 
-<p>LINE：後日掲載</p>
+<p>
+<input
+type="text"
+name="name"
+placeholder="お名前"
+required>
+</p>
 
-<p>メールフォーム：準備中</p>
+<p>
+<input
+type="email"
+name="email"
+placeholder="メールアドレス"
+required>
+</p>
+
+<p>
+<input
+type="tel"
+name="phone"
+placeholder="電話番号">
+</p>
+
+<p>
+<textarea
+name="message"
+rows="6"
+placeholder="お問い合わせ内容"
+required></textarea>
+</p>
+
+<p>
+<button type="submit">
+送信する
+</button>
+</p>
+
+</form>
 
 </div>
 
