@@ -56,17 +56,37 @@ nav a{
 
 .hero{
 height:100vh;
-
-background:
-linear-gradient(
-rgba(0,0,0,0.65),
-rgba(0,0,0,0.75)
-),
-url("IMG_9805.JPG");
-
+animation: slideshow 15s infinite;
 background-size:cover;
 background-position:center;
+}
+    @keyframes slideshow {
 
+0%{
+background-image:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("IMG_9805.JPG");
+}
+
+33%{
+background-image:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("IMG_9807.JPG");
+}
+
+66%{
+background-image:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("SANSMC.png");
+}
+
+100%{
+background-image:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("IMG_9805.JPG");
+}
+}
+    
 display:flex;
 justify-content:center;
 align-items:center;
@@ -228,10 +248,10 @@ nav ul{
 
 <ul>
 <li><a href="#about">会社紹介</a></li>
-<li><a href="#stock">在庫一覧</a></li>
+<li><a href="#stock">販売車両</a></li>
 <li><a href="#purchase">買取</a></li>
-<li><a href="#voice">お客様の声</a></li>
 <li><a href="#works">作業実績</a></li>
+<li><a href="#sns">SNS</a></li>
 <li><a href="#contact">お問い合わせ</a></li>
 </ul>
 
@@ -299,23 +319,23 @@ MOTORCYCLE RESTRATION & SALES
 <div class="cards">
 
 <div class="card">
-<h3>準備中</h3>
-<p>comingsoon...</p>
-<p></p>
+<img src="IMG_9805.JPG" style="width:100%;border-radius:10px;">
+<h3>仕入れ・点検</h3>
+<p>販売前の車両確認を実施しています。</p>
 </div>
 
 <div class="card">
-<h3>準備中</h3>
-<p>comingsoon...</p>
-<p></p>
+<img src="IMG_9807.JPG" style="width:100%;border-radius:10px;">
+<h3>整備・清掃</h3>
+<p>納車前に点検・清掃を行っています。</p>
 </div>
 
-<div class="card">
-<h3>準備中</h3>
-<p>comingsoon...</p>
-<p></p>
 </div>
 
+<div style="text-align:center;margin-top:30px;">
+<a href="works.html" class="btn">
+作業実績をもっと見る
+</a>
 </div>
 
 </section>
@@ -422,13 +442,45 @@ style="width:100%;border-radius:10px;">
 
 </div>
 
+<section class="section" id="sns">
+
+<h2>FOLLOW US</h2>
+
+<p>
+最新の販売車両や作業風景はSNSでも発信しています。
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="https://www.instagram.com/good__vibration77/"
+target="_blank"
+class="btn">
+
+Instagram
+
+</a>
+
+<a
+href="https://www.youtube.com/@Good_Vibration77"
+target="_blank"
+class="btn">
+
+YouTube
+
+</a>
+
+</div>
+
 </section>
+
 
 <h2>お問い合わせ</h2>
 
 <div class="contact-box">
 
-<form action="https://formspree.io/f/xbgoqawq" method="POST">
+<form action="https://formspree.io/f/xbgoqawq"
+method="POST">
 
 <p>
 <input
